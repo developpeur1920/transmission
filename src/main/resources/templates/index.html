@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>hi-tuto</title>
+</head>
+<body>
+<center>
+    <form th:action="@{/getobj}" th:object="${person}" >
+        <label>Nom</label>
+        <input type="text" th:field="*{nom}" placeholder=" nom ?">
+        <label>Prenom</label>
+        <input type="text" th:field="*{prenom}"placeholder=" prenom ?">
+        <label>Age</label>
+        <input type="text" th:field="*{age}" placeholder=" age ?">
+        <br>
+        <input type="submit" value="valider">
+    </form>
+</center>
+</body>
+</html>
